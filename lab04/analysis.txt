@@ -1,0 +1,41 @@
+
+NOTE:
+- Your time complexities should be expressed in big-O notation and be in
+  terms of either:
+  - n, where n is the number of nodes in the tree, or
+  - h, where h is the height of the tree
+
+=================
+  bstNumLeaves
+=================
+
+- Worst case time complexity: O(n) 
+
+- Explanation: When the tree have only one branch (1-2-3-4-5-..-n), the function need traverse the whole tree to get the tree.
+
+=================
+    bstRange
+=================
+
+- Worst case time complexity: O(h)
+
+- Explanation: The worst case happens when the smallest or biggest value on the longest 
+branch which length is height h.
+
+=================
+ bstDeleteLeaves
+=================
+
+- Worst case time complexity: O(n)
+
+- Explanation: Whatever the tree is balanced or not balanced, we need access every node from root, so O(n).
+
+=================
+  bstLevelOrder
+=================
+
+- Worst case time complexity: O(n)
+
+- Explanation: Whatever the case is, we need to go through every single node and print.
+
+

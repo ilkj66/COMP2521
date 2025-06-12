@@ -1,0 +1,24 @@
+Enter number of vertices: Enter number of edges: Enter 10 edges in the form `v w` (no quotes):
+Number of vertices: 10
+Number of edges: 10
+Edges:
+ 0: 1 2
+ 1: 0 3 6
+ 2: 0 9
+ 3: 1 4 5
+ 4: 3
+ 5: 3 7 9
+ 6: 1
+ 7: 5 8
+ 8: 7
+ 9: 2 5
+
+Enter two vertices: The shortest distance between vertices 0 and 7 is: 4
+Enter two vertices: The shortest distance between vertices 8 and 2 is: 4
+Enter two vertices: The shortest distance between vertices 2 and 6 is: 3
+Enter two vertices: The shortest distance between vertices 4 and 9 is: 3
+Enter two vertices: The shortest distance between vertices 1 and 9 is: 3
+Enter two vertices: The shortest distance between vertices 8 and 0 is: 5
+Enter two vertices: The shortest distance between vertices 3 and 9 is: 2
+Enter two vertices: The shortest distance between vertices 5 and 6 is: 3
+Enter two vertices: 

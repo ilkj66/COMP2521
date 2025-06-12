@@ -1,0 +1,1 @@
+The best case and the wort case are both: O(n^3).

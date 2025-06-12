@@ -1,0 +1,14 @@
+Enter number of vertices: Enter number of edges: Enter 7 edges in the form `v w` (no quotes):
+Number of vertices: 8
+Number of edges: 7
+Edges:
+ 0: 1 2 3
+ 1: 0 6
+ 2: 0 5
+ 3: 0 4 7
+ 4: 3
+ 5: 2
+ 6: 1
+ 7: 3
+
+hasCycle returned: FALSE

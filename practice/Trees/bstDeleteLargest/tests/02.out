@@ -1,0 +1,16 @@
+Enter the preorder traversal of the BST: 
+BST:
+
+    6
+   /
+  2
+ / \
+1   4
+
+BST after deleting largest:
+
+  2
+ / \
+1   4
+
+The largest value was 6

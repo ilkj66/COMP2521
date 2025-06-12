@@ -1,0 +1,7 @@
+Question 2
+
+What is the maximum input size that can be processed? Justify your
+answer.
+
+
+10 + log10000 base of 2 = 23

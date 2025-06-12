@@ -1,0 +1,19 @@
+Enter number of vertices: Enter number of edges: Enter 12 edges in the form `v w` (no quotes):
+Number of vertices: 11
+Number of edges: 12
+Edges:
+ 0: 5
+ 1: 2 3 4
+ 2: 1 3 4
+ 3: 1 2 4
+ 4: 1 2 3
+ 5: 0 6
+ 6: 5 7
+ 7: 6 8
+ 8: 7 9
+ 9: 8 10
+10: 9
+
+Enter the source vertex: Number of vertices reachable from vertex 3: 4
+Enter the source vertex: Number of vertices reachable from vertex 9: 7
+Enter the source vertex: 

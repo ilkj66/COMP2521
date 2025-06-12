@@ -1,0 +1,3 @@
+Enter list: 
+Original list: [2] -> [5] -> [8] -> [2] -> [6] -> [1] -> X
+After deleting largest: [2] -> [5] -> [2] -> [6] -> [1] -> X

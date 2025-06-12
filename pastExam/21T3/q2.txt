@@ -1,0 +1,7 @@
+Question 2
+
+What is the maximum input size? Justify your answer.
+
+1000 + log 10000 of base 10 = 1004
+
+

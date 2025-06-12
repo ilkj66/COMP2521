@@ -1,0 +1,16 @@
+Enter number of vertices: Enter number of edges: Enter 9 edges in the form `v w` (no quotes):
+Number of vertices: 10
+Number of edges: 9
+Edges:
+ 0: 9
+ 1: 8 9
+ 2: 7 8
+ 3: 6 7
+ 4: 5 6
+ 5: 4
+ 6: 3 4
+ 7: 2 3
+ 8: 1 2
+ 9: 0 1
+
+hasCycle returned: FALSE

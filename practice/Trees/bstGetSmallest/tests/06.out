@@ -1,0 +1,6 @@
+Enter the preorder traversal of the BST: 
+BST:
+
+X
+
+bstGetSmallest returned: NULL

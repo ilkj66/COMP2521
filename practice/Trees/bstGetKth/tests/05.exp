@@ -1,0 +1,7 @@
+Enter the preorder traversal of the BST: 
+BST:
+
+7
+
+Enter k: For k = 0, bstGetKth returned 7
+Enter k: 

@@ -1,0 +1,17 @@
+Enter the preorder traversal of the tree: Enter the in-order traversal of the tree: Enter depth: 
+Tree:
+
+    7
+   / \
+  4   9
+ / \
+2   6
+
+Copy of the tree up to depth 4:
+
+    7
+   / \
+  4   9
+ / \
+2   6
+

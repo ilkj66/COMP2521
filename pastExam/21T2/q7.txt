@@ -1,0 +1,4 @@
+The piece of code's time complexity is O(n^2).
+malloc use O(1) time, and the first for loop use O(n) time. The second for loop uses O(m) time,
+we can know, m < n ,because there will be buffer overflow, so m < n, the insertion sorting algorithms
+takes O(n^2), so the time complexity should be O(1) + O(m) + O(n) + O(n^2) = O(n^2).

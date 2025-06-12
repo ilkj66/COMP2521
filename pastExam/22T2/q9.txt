@@ -1,0 +1,30 @@
+Question 9
+
+(a) What are the final contents of the hash table after the given values
+    have been inserted into an initially empty table in the order given. 
+value % 13
+2, 26, 13, 32, 0, 31, 20, 18
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+_26  _13  _2_  _0_  ___  _31  _32  _20  _18  ___  ____  ____  ____
+
+
+    How many keys are examined in searching for the key value 45 in the 
+    resulting table?
+4
+
+
+(b) What are the final contents of the hash table after the given values
+    have been inserted into an initially empty table in the order given. 
+
+% 13
+7 - (k % 7)
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+_26  _13  _2_  ___  ___  _31  _32  _0_  _20  ___   ___  _18   ____
+
+
+    How many keys are examined in searching for the key value 6 in the 
+    resulting table?
+
+4

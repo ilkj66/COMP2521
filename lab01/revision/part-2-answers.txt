@@ -1,0 +1,75 @@
+
+NOTE: Write your answers to Part 2 here!
+
+============================
+   AddressSanitizer error
+============================
+
+Paste the error from AddressSanitizer here:
+
+ ==3879240==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200000001a at pc 0x559a9c163e77 bp 0x7ffcdeddd0d0 sp 0x7ffcdeddc878
+WRITE of size 6 at 0x60200000001a thread T0
+    #0 0x559a9c163e76 in strcat (/import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings+0x8de76) (BuildId: 8ecd96d92760ed2e2609c23073f9bc07a439d89c)
+    #1 0x559a9c1b5337 in concatStrings /import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings.c:40:2
+    #2 0x559a9c1b5144 in main /import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings.c:32:12
+    #3 0x7ff95b0f7249 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #4 0x7ff95b0f7304 in __libc_start_main csu/../csu/libc-start.c:360:3
+    #5 0x559a9c0f7310 in _start (/import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings+0x21310) (BuildId: 8ecd96d92760ed2e2609c23073f9bc07a439d89c)
+
+0x60200000001a is located 0 bytes to the right of 10-byte region [0x602000000010,0x60200000001a)
+allocated by thread T0 here:
+    #0 0x559a9c17a15e in __interceptor_malloc (/import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings+0xa415e) (BuildId: 8ecd96d92760ed2e2609c23073f9bc07a439d89c)
+    #1 0x559a9c1b52a1 in concatStrings /import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings.c:38:12
+    #2 0x559a9c1b5144 in main /import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings.c:32:12
+    #3 0x7ff95b0f7249 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/import/adams/8/z5528914/COMP2521/lab01/makefiles/concatStrings+0x8de76) (BuildId: 8ecd96d92760ed2e2609c23073f9bc07a439d89c) in strcat
+Shadow bytes around the buggy address:
+  0x0c047fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c047fff8000: fa fa 00[02]fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8010: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8020: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8030: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+============================
+   MemorySanitizer error
+============================
+
+Paste the error from MemorySanitizer here:
+
+=3910760==WARNING: MemorySanitizer: use-of-uninitialized-value
+    #0 0x55cee86877c3 in main /import/adams/8/z5528914/COMP2521/lab01/makefiles/getMax.c:18:7
+    #1 0x7f0a23e75249 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #2 0x7f0a23e75304 in __libc_start_main csu/../csu/libc-start.c:360:3
+    #3 0x55cee86012b0 in _start (/import/adams/8/z5528914/COMP2521/lab01/makefiles/getMax+0x212b0) (BuildId: 07ee3c4b418a4ab50731b1e343f264ff0d027f86)
+
+  Uninitialized value was created by an allocation of 'max' in the stack frame of function 'main'
+    #0 0x55cee86872a0 in main /import/adams/8/z5528914/COMP2521/lab01/makefiles/getMax.c:5
+
+SUMMARY: MemorySanitizer: use-of-uninitialized-value /import/adams/8/z5528914/COMP2521/lab01/makefiles/getMax.c:18:7 in main
+

@@ -1,0 +1,8 @@
+Question 1
+
+What is the time complexity of the algorithm? Justify your answer.
+
+O(n^2)
+it takes O(1) * (n/4) to solve the problem, and it takes O(n) * (n/4) to convert it
+to two subproblems, also it takes O(1) * n/8 time to combine, so time complexity is O(n^2).
+

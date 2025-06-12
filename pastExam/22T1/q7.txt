@@ -1,0 +1,19 @@
+Question 7
+
+(a) How many items are examined in searching for the key 42? Justify
+    your answer.
+
+4
+find the index of 9, and visit 9,20,31,42.
+
+(b) How many items are examined in searching for the key 111? Justify
+    your answer.
+
+10,
+111 % 11 = 1, and there are 1,12,23,34,45,56,67,78,89,100 in the index of 1.
+
+(c) What is the worst-case search cost, in terms of the number of items
+    examined, after N total items have been inserted? Justify your answer.
+
+The search cost is (N / 11).
+

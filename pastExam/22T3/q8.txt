@@ -1,0 +1,12 @@
+Question 8
+
+(a) What is the maximum number of words that could be contained in the
+    trie? Justify your answer.
+
+n words, every word is on the same branch.
+
+(b) What is the minimum number of words that could be contained in the
+    trie? Justify your answer.
+
+m words, the endOfWord will only be true on the leave node.
+

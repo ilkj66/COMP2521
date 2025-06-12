@@ -1,0 +1,9 @@
+Question 9
+
+Which data structure and algorithm would you use to solve the task?
+Justify your answer.
+
+Use Graph data structure, and Prim's / Kruskal Algorithm.
+
+The islands are vertex in graph and bridges are edges. Prim's / Kruskal Algorithm will find the shortest path that can
+go through every single island.

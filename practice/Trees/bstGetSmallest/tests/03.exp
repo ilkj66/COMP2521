@@ -1,0 +1,10 @@
+Enter the preorder traversal of the BST: 
+BST:
+
+5
+ \
+  8
+ / \
+6   9
+
+bstreeGetSmallest returned: 5

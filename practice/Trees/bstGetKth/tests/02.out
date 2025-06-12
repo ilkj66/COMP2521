@@ -1,0 +1,20 @@
+Enter the preorder traversal of the BST: 
+BST:
+
+   8
+  / \
+ /   \
+2    12
+ \     \
+  5    13
+ / \
+4   7
+
+Enter k: For k = 0, bstGetKth returned 2
+Enter k: For k = 1, bstGetKth returned 4
+Enter k: For k = 2, bstGetKth returned 5
+Enter k: For k = 3, bstGetKth returned 7
+Enter k: For k = 4, bstGetKth returned 8
+Enter k: For k = 5, bstGetKth returned 12
+Enter k: For k = 6, bstGetKth returned 13
+Enter k: 

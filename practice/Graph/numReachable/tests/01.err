@@ -1,0 +1,4 @@
+numReachable.c:24:44: runtime error: load of value 190, which is not a valid value for type 'bool'
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior numReachable.c:24:44 in 
+numReachable.c:14:13: runtime error: load of value 190, which is not a valid value for type 'bool'
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior numReachable.c:14:13 in 

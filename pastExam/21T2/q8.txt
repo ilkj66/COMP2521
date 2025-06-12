@@ -1,0 +1,6 @@
+Merge Sort: Best Case: O(nlogn), Worst Case: O(nlogn);
+Quick Sort: Best Case: O(nlogn), Worst Case: O(n^2);
+
+If there are numbers of key value pairs data, and they are sort by keys and
+if we dont want to change the previous value order of values, we should use merge sort, because merge sort is stable
+and quick sort is not.

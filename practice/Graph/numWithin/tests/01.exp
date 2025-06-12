@@ -1,0 +1,27 @@
+Enter number of vertices: Enter number of edges: Enter 10 edges in the form `v w` (no quotes):
+Number of vertices: 11
+Number of edges: 10
+Edges:
+ 0: 1 5 8 10
+ 1: 0 2
+ 2: 1 3
+ 3: 2 4
+ 4: 3
+ 5: 0 6
+ 6: 5 7
+ 7: 6
+ 8: 0 9
+ 9: 8
+10: 0
+
+Enter the source vertex and maximum distance: numWithin(g, 0, 5) = 11
+Enter the source vertex and maximum distance: numWithin(g, 0, 4) = 11
+Enter the source vertex and maximum distance: numWithin(g, 0, 3) = 10
+Enter the source vertex and maximum distance: numWithin(g, 0, 2) = 8
+Enter the source vertex and maximum distance: numWithin(g, 0, 1) = 5
+Enter the source vertex and maximum distance: numWithin(g, 0, 0) = 1
+Enter the source vertex and maximum distance: numWithin(g, 4, 5) = 8
+Enter the source vertex and maximum distance: numWithin(g, 7, 4) = 7
+Enter the source vertex and maximum distance: numWithin(g, 9, 3) = 6
+Enter the source vertex and maximum distance: numWithin(g, 10, 2) = 5
+Enter the source vertex and maximum distance: 

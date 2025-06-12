@@ -1,0 +1,16 @@
+Enter number of vertices: Enter number of edges: Enter 5 edges in the form `v w` (no quotes):
+Number of vertices: 6
+Number of edges: 5
+Edges:
+ 0: 1
+ 1: 0 2
+ 2: 1 3
+ 3: 2 4
+ 4: 3 5
+ 5: 4
+
+Enter two vertices: The shortest distance between vertices 0 and 0 is: 0
+Enter two vertices: The shortest distance between vertices 0 and 3 is: 3
+Enter two vertices: The shortest distance between vertices 4 and 0 is: 4
+Enter two vertices: The shortest distance between vertices 1 and 5 is: 4
+Enter two vertices: 

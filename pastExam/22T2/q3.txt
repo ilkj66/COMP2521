@@ -1,0 +1,35 @@
+Question 3
+
+(a) How many times is the statement in line 3 executed (initialization
+    of components) in terms of n and m?
+
+n times
+
+(b) How many times is the statement in line 6 executed (deleting an edge
+    from the list of edges) in terms of n and m?
+
+m times
+
+(c) What is the time complexity (in big-O notation) of testing whether
+    two nodes are in different components?
+
+O(1)
+
+(d) In the worst case, how many times is the statement in line 8
+    executed (merging two components) in terms of n and m? Justify your
+    answer.
+
+n - 1
+Every nodes are in the different components
+
+(e) What is the worst case time complexity (in big-O notation) of
+    merging two components into a single component? Justify your answer.
+
+O(n)
+there are two components and each has n nodes, so total use n/2 time which is O(n)
+
+(f) What is the overall worst case time complexity (in big-O notation)
+    of this algorithm? Ignore the complexity of lines 1 and 4. Justify
+    your answer.
+
+O(n^2)

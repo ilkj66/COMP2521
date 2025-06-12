@@ -1,0 +1,3 @@
+Enter list: 
+Original list: [1] -> [2] -> [3] -> [4] -> [5] -> [6] -> [1] -> X
+After deleting duplicates: [1] -> [2] -> [3] -> [4] -> [5] -> [6] -> X

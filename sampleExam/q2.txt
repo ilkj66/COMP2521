@@ -1,0 +1,9 @@
+Question 2
+
+Explain why the compilation error occurred and briefly describe how it
+can be fixed.
+
+u and v might be larger than nV which makes out of memory
+add: if (u < nV && v < nV) before after scan
+ 
+

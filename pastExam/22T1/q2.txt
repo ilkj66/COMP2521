@@ -1,0 +1,7 @@
+Question 2
+
+Explain why the compilation error occurred and briefly describe how it
+can be fixed.
+
+check variable u and v after scanf, check are they bigger than nV, both of them should smaller than nV, and bigger than 0
+

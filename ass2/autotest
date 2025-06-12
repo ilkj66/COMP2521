@@ -1,0 +1,182 @@
+#!/bin/sh
+
+cd "$(dirname "$0")"
+
+trap "rm -f .time" EXIT
+
+main()
+{
+	if [ $# -ne 1 ]
+	then
+		echo "usage: $0 <task number (1-4)>"
+		exit 1
+	fi
+
+	case "$1" in
+		1|2|3|4) ;;
+		*) echo "invalid task number '$1'"
+		   exit 1 ;;
+	esac
+
+	compile
+	echo
+
+	case "$1" in
+		1) test_task1 ;;
+		2) test_task2 ;;
+		3) test_task3 ;;
+		4) test_task4 ;;
+	esac
+
+	echo
+}
+
+compile()
+{
+	echo "================================"
+	echo "** Compilation"
+	echo "================================"
+
+	make
+
+	if [ $? -ne 0 ]
+	then
+		exit 1
+	fi
+}
+
+test_task1()
+{
+	echo "================================"
+	echo "** Tests for Task 1"
+	echo "================================"
+	echo "** Note that this simply runs ./testRoadMap 1"
+	echo
+
+	./testRoadMap 1
+}
+
+test_task2()
+{
+	echo "================================"
+	echo "** Tests for Task 2"
+	echo "================================"
+	echo "** Note that this simply runs ./testRoadMap 2"
+	echo
+
+	./testRoadMap 2
+}
+
+test_task3()
+{
+	echo "================================"
+	echo "** Tests for Task 3"
+	echo "================================"
+
+	echo "--------------------------------"
+	echo "** Test 0 (./testRoadMap 3)"
+	echo "--------------------------------"
+	echo "** Note that this simply runs ./testRoadMap 3"
+	echo
+	./testRoadMap 3
+	echo
+
+	data_dir="task3"
+
+	for map_file in "$data_dir"/*.map
+	do
+		test_number="$(basename "$map_file" .map)"
+		query_file="$data_dir/$test_number.query"
+
+		if [ ! -e "$query_file" ]
+		then
+			continue
+		fi
+
+		echo "--------------------------------"
+		echo "** Test $test_number"
+		echo "--------------------------------"
+
+		out_file="$data_dir/$test_number.out"
+		exp_file="$data_dir/$test_number.exp"
+
+		./testNavigator "$map_file" "$query_file" > "$out_file"
+
+		if [ $? -ne 0 ]
+		then
+			echo "** Test failed (runtime error)"
+		elif [ ! -e "$exp_file" ]
+		then
+			echo "** No expected output available - check the output in $out_file manually"
+		elif ! diff "$out_file" "$exp_file" > /dev/null
+		then
+			echo "** Test failed (incorrect output)"
+			echo
+			echo "** Your output (in $out_file):"
+			cat "$out_file"
+			echo
+			echo "** Expected output (in $exp_file):"
+			cat "$exp_file"
+		else
+			echo "** Test passed"
+		fi
+	done
+}
+
+test_task4()
+{
+	echo "================================"
+	echo "** Tests for Task 4"
+	echo "================================"
+
+	echo "--------------------------------"
+	echo "** Test 0 (./testRoadMap 4)"
+	echo "--------------------------------"
+	echo "** Note that this simply runs ./testRoadMap 4"
+	echo
+	./testRoadMap 4
+	echo
+
+	data_dir="task4"
+
+	for map_file in "$data_dir"/*.map
+	do
+		test_number="$(basename "$map_file" .map)"
+		query_file="$data_dir/$test_number.query"
+
+		if [ ! -e "$query_file" ]
+		then
+			continue
+		fi
+
+		echo "--------------------------------"
+		echo "** Test $test_number"
+		echo "--------------------------------"
+
+		out_file="$data_dir/$test_number.out"
+		exp_file="$data_dir/$test_number.exp"
+
+		./testNavigator "$map_file" "$query_file" > "$out_file"
+
+		if [ $? -ne 0 ]
+		then
+			echo "** Test failed (runtime error)"
+		elif [ ! -e "$exp_file" ]
+		then
+			echo "** No expected output available - check the output in $out_file manually"
+		elif ! diff "$out_file" "$exp_file" > /dev/null
+		then
+			echo "** Test failed (incorrect output)"
+			echo "** Your output (in $out_file):"
+			cat "$out_file"
+			echo
+			echo "** Expected output (in $exp_file):"
+			cat "$exp_file"
+		else
+			echo "** Test passed"
+		fi
+	done
+}
+
+main "$@"
+

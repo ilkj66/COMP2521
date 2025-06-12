@@ -1,0 +1,15 @@
+Question 5
+
+(a) Describe and justify the method you would use to determine which
+    sorting algorithm the program uses.
+
+Testing and recording the time with random input data, keep double the size of data, and check the time use,
+if there as the size doubled if the time become 4 times of previous time, it is selection sort, because its average time
+complexity is O(n^2), the other is quick sort, because the average time complexity id O(nlogn)
+
+(b) Is the sorting algorithm that the program uses stable? How confident
+    are you in your conclusion? Explain your answer.
+
+The sorting algorithm is stable, quite confident and sure. The sorting result didn't change the previous order of the second number 
+of each pairs.
+

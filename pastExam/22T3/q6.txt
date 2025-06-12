@@ -1,0 +1,54 @@
+Question 6
+
+(a) Show the state of the array after the first four scans.
+
+(Replace the underlines with the array elements)
+
+[0]   [1]   [2]   [3]  [4]   [5]   [6]   [7]  [8]   [9]   [10]  [11]
+_15_  _26_  _55_  _4_  _46_  _41_  _14_  _5_  _71_  _96_  _98_  _100_
+
+(b) Show the state of the array after each pass of the algorithm.
+
+Initial state:
+
+[0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]
+98   26   71   96   15   55   100   4   46   41    14    5
+
+After the first pass:
+
+[0]   [1]   [2]   [3]   [4]   [5]   [6]   [7]   [8]   [9]  [10]  [11]
+_26_  _98_  _71_  _96_  _15_  _55_  _4_  _100_  _41_  _46_  _5_  _14_
+
+After the second pass:
+
+[0]   [1]   [2]   [3]   [4]  [5]   [6]   [7]    [8]  [9]   [10]  [11]
+_26_  _71_  _96_  _98_  _4_  _15_  _55_  _100_  _5_  _14_  _41_  _46_
+
+After the third pass:
+
+[0]  [1]    [2]   [3]   [4]   [5]   [6]   [7]   [8]  [9]   [10]  [11]
+_4_  _15_  _26_  _55_  _71_  _96_  _98_  _100_  _5_  _14_  _41_  _46_
+
+After the fourth pass:
+
+[0]  [1]  [2]   [3]   [4]   [5]   [6]   [7]   [8]   [9]   [10]  [11]
+_4_  _5_  _14_  _15_  _26_  _41_  _46_  _55_  _71_  _96_  _98_  _100_
+
+(Copy the above template as many times as needed)
+
+
+
+(c) Identify two important differences between radix sort and merge
+    sort.
+
+Merge Sort is comparision sort but radix sort is non-comparision sort.
+
+    Give one situation where radix sort would be more suitable than
+    merge sort.
+
+Sorting strings and every strings contains less than logn character.
+
+    Give one situation where merge sort would be more suitable than
+    radix sort.
+
+Sorting strings have lots of character or really big numbers.

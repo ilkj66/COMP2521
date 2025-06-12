@@ -1,0 +1,25 @@
+
+NOTE:
+- Your time complexities should be expressed in big-O notation and be in
+  terms of n, where n is the number of cells in the maze.
+
+============
+  solveBfs
+============
+
+- Worst case time complexity: O(n)
+
+- Explanation: For the worst case, the Bfs functions will visit every every cells in maze,
+but it will check the cell is visited or not which means the functions will only visit every cells
+once, and in the back tracking part, the number of visiting cell will less than n, so 
+the worst time complexity is O(n).
+
+============
+  solveDfs
+============
+
+- Worst case time complexity: O(n)
+
+- Explanation: In worst case, Dfs function will go through every cells once, which use O(n).
+The backtracking path conclude number of cells less than n.
+

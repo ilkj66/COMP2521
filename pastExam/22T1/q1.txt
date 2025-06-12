@@ -1,0 +1,19 @@
+Question 1
+
+(a) What is the maximum input size that can be processed? Justify your
+    answer.
+
+10 + log1000 base 2 = 10 + 9 = 19
+
+(b) Which of the two algorithms is more efficient? Justify your answer.
+
+Binary search is more efficiency, because after every split the array, binary search only need to check once, and 
+Quad search need to check three times. When we using binary search after 3 times the array are only 1/8 size of before,
+and Quad search only make the range 1/4 of before. 
+
+(c) What are the time complexities of fnA() and fnB() in terms of a and
+    b? Justify your answer.
+
+func A : O(b - a);
+func B : O((b - a)^2);
+

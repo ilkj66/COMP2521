@@ -1,0 +1,7 @@
+Question 8
+
+Which of the given statements about tries (A, B, C or D) is false?
+Briefly explain why the statement you selected is false.
+
+B, for example the wors 'an' is a prefix of the word 'ant'.
+

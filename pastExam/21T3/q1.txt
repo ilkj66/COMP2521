@@ -1,0 +1,10 @@
+Question 1
+
+What is the time complexity of the algorithm? Justify your answer.
+
+O(nlogn)
+
+Every time of breaking down use O(n) and it needs (log2)^n times to break down all questions,
+so total time of braking down is O(nlogn), and it takes the same time of combining, so the total time is 
+2 * nlogn which is O(nlogn).
+
